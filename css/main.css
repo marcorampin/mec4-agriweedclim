@@ -1,0 +1,57 @@
+/*elements*/
+html
+{
+    font-family: sans-serif;
+    width: 100%;
+    --maxHeight: 100vh;
+}
+
+body
+{
+	width: 80%;
+	margin: auto;
+}
+
+/*id*/
+#title-page
+{
+	height:calc(var(--maxHeight) - 10px);
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 2fr 1fr;
+	align-items: center;
+	justify-items: center;
+	
+	background-color: #0162a6;
+	color: white;
+	border-radius: 25px;
+	margin: 5px 0px 5px 0px;
+	
+}
+
+#uni-logo
+{
+	grid-row: 1;
+	grid-column: 1;
+}
+
+#main-title
+{
+	grid-row: 2;
+	grid-column: 2;
+	text-align: center;
+}
+
+#student
+{
+	grid-row: 3;
+	grid-column: 1;
+	align-self: start;
+}
+
+#supervisors
+{
+	grid-row: 3;
+	grid-column: 3;
+	align-self: start;
+}
