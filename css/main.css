@@ -68,3 +68,13 @@ body
 {
 	font-size: 0.8em;
 }
+
+.grid
+{
+	display: grid;
+}
+
+.max-width
+{
+	max-width: 100%;
+}
