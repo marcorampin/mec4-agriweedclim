@@ -8,7 +8,7 @@ html
 
 body
 {
-	width: 80%;
+	width: 85%;
 	margin: auto;
 }
 
@@ -17,10 +17,8 @@ body
 {
 	height:calc(var(--maxHeight) - 10px);
 	display: grid;
-	grid-template-columns: 1fr 2fr 1fr;
-	grid-template-rows: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1.5fr 1fr;
 	align-items: center;
-	justify-items: center;
 	
 	background-color: #0162a6;
 	color: white;
@@ -32,26 +30,41 @@ body
 #uni-logo
 {
 	grid-row: 1;
-	grid-column: 1;
+	max-height: 25vh;
+	justify-self: start;
 }
 
 #main-title
 {
 	grid-row: 2;
-	grid-column: 2;
 	text-align: center;
+	font-size: max(25px, 3vw);
+	padding: 0px 5px;
+}
+
+#authors
+{
+	grid-row: 3;
+	
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	font-size: max(16px, 1.5vw);
 }
 
 #student
 {
-	grid-row: 3;
-	grid-column: 1;
-	align-self: start;
+	padding: 10px;
 }
 
 #supervisors
 {
-	grid-row: 3;
-	grid-column: 3;
-	align-self: start;
+	padding: 10px;
+}
+
+
+/* Classes */
+.personal-title
+{
+	font-size: 0.8em;
 }
